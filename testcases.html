@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>test cases for codeivate.com signatures</title>
+</head>
+<style>
+.testcase {
+	float:left;
+	margin-right:10px;
+}
+br {
+	clear:both;
+}
+</style>
+<body>
+<header>
+	<h1>Test cases for signature generator</h1>
+
+	<p> Possible GET values</p>
+		<pre>
+		<code>
+			$_GET['programming']
+			$_GET['name']
+			$_GET['current_level']
+			$_GET['major_languages']
+			$_GET['best_streaks']
+			$_GET['days']
+			$_GET['time']
+		</code>
+		</pre>
+
+
+</header>
+
+<section>
+<h1>short names</h1>
+
+
+<div class="testcase">
+	<p>default</p>
+<img src="signature.php" />
+</div>
+
+<div class="testcase">
+	<p>short name, level 1</p>
+<img src="signature.php?current_level=1" />
+</div>
+
+<div class="testcase">
+	<p>short name, level 70</p>
+<img src="signature.php?current_level=1" />
+</div>
+
+<div class="testcase">
+	<p>short name, currently programming</p>
+<img src="signature.php?programming=true" />
+</div>
+
+<div class="testcase">
+	<p>short name, currently in a flow state</p>
+<img src="signature.php?programming=true&flow_state=true" />
+</div>
+
+<div class="testcase">
+	<p>short name, 5 major languages</p>
+<img src="signature.php?major_languages=Python Django,JavaScript,HTML (Django),JSON,CSS" />
+</div>
+
+<div class="testcase">
+	<p>short name, 300 days, 100 hours coded</p>
+<img src="signature.php?days=300&major_languages=Python Django,JavaScript,HTML (Django),JSON,CSS&time=100 hours 59 minutes" />
+</div>
+
+<div class="testcase">
+	<p>short name, level 0, 10% progress</p>
+<img src="signature.php?current_level=0.1" />
+</div>
+
+
+<div class="testcase">
+	<p>short name, level 50, 99% progress</p>
+<img src="signature.php?current_level=0.99" />
+</div>
+</section>
+
+
+<br />
+<hr />
+
+<section>
+<h1>long names</h1>
+
+
+
+<section>
+<h1>long names</h1>
+
+
+<div class="testcase">
+	<p>long name, level 1</p>
+<img src="signature.php?name=lord codemonkey&current_level=1" />
+</div>
+
+<div class="testcase">
+	<p>long name, level 70</p>
+<img src="signature.php?name=lord codemonkey&current_level=1" />
+</div>
+
+<div class="testcase">
+	<p>long name, currently programming</p>
+<img src="signature.php?name=lord codemonkey&programming=true" />
+</div>
+
+<div class="testcase">
+	<p>long name, currently in a flow state</p>
+<img src="signature.php?name=lord codemonkey&programming=true&flow_state=true" />
+</div>
+
+<div class="testcase">
+	<p>long name, 5 major languages</p>
+<img src="signature.php?name=lord codemonkey&major_languages=Python Django,JavaScript,HTML (Django),JSON,CSS" />
+</div>
+
+<div class="testcase">
+	<p>long name, 300 days, 100 hours coded</p>
+<img src="signature.php?name=lord codemonkey&days=300&major_languages=Python Django,JavaScript,HTML (Django),JSON,CSS&time=100 hours 59 minutes" />
+</div>
+
+<div class="testcase">
+	<p>long name, level 0, 10% progress</p>
+<img src="signature.php?name=lord codemonkey&current_level=0.1" />
+</div>
+
+
+<div class="testcase">
+	<p>long name, level 50, 99% progress</p>
+<img src="signature.php?name=lord codemonkey&current_level=0.99" />
+</div>
+</section>
+
+
+
+</body>
+</html>
