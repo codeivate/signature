@@ -15,16 +15,16 @@ br {
 <header>
 	<h1>Test cases for signature generator</h1>
 
-	<p> Possible GET values</p>
+	<p> Current GET values for testing on signature.php</p>
 		<pre>
 		<code>
-			$_GET['programming']
-			$_GET['name']
-			$_GET['current_level']
-			$_GET['major_languages']
-			$_GET['best_streaks']
-			$_GET['days']
-			$_GET['time']
+			$_GET['programming'] // true / false
+			$_GET['flow_state'] // true / false
+			$_GET['name'] // username, string
+			$_GET['current_level'] // users current level, float
+			$_GET['major_languages'] // comma delimeted string of 1~5 langauges
+			$_GET['days'] // days coded, int
+			$_GET['time'] // total time coded, x hours m minutes format as string
 		</code>
 		</pre>
 
@@ -47,7 +47,7 @@ br {
 
 <div class="testcase">
 	<p>short name, level 70</p>
-<img src="signature.php?current_level=1" />
+<img src="signature.php?current_level=70" />
 </div>
 
 <div class="testcase">
@@ -89,20 +89,14 @@ br {
 <section>
 <h1>long names</h1>
 
-
-
-<section>
-<h1>long names</h1>
-
-
 <div class="testcase">
 	<p>long name, level 1</p>
 <img src="signature.php?name=lord codemonkey&current_level=1" />
 </div>
 
 <div class="testcase">
-	<p>long name, level 70</p>
-<img src="signature.php?name=lord codemonkey&current_level=1" />
+	<p>long name, level 70.5</p>
+<img src="signature.php?name=lord codemonkey&current_level=70.5" />
 </div>
 
 <div class="testcase">
