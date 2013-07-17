@@ -25,3 +25,6 @@ A selection of tests are available to view in the browser (PHP server is require
 
 
 Got a question? contact [@codeivate](http://www.twitter.com/codeivate) or open an issue.
+
+
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/21bd7f784fcb39d4030568531a1ec1c5 "githalytics.com")](http://githalytics.com/codeivate/signature)
